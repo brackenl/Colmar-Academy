@@ -1,0 +1,139 @@
+
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;;
+  }
+
+nav {
+    margin: 0 24px;
+    height: 64px;
+    line-height: 64px;
+}
+
+nav .logo {
+    float: left;
+  }
+
+nav .logo img, nav .logo p {
+    display: inline-block;
+    font-family: 32px;
+}
+
+nav .logo img {
+    vertical-align: middle;
+}
+
+nav ul {
+    float: right;
+}
+
+  nav li {
+    padding-left: 16px;
+    display: inline-block;
+  }
+
+  #academy {
+      color: gray;
+  }
+
+/* banner section */
+
+.banner {
+    background-color: gray;
+}
+
+.banner .container {
+    display: inline-block;
+}
+
+.banner .img-container {
+    width: 60%;
+    margin: 32px 24px 32px 24px;
+}
+
+.banner .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.banner .text-container {
+    width: 35%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    height: 12em;
+    margin-top: -6em;
+}
+
+.banner .text-container span {
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#first-section {
+    margin-top: 64px;
+}
+
+/* keep practicing section */
+
+.keep-practicing {
+    background-color: white;
+}
+
+.keep-practicing .container {
+    display: inline-block;
+}
+
+.keep-practicing .img-container {
+    width: 60%;
+    margin: 32px 24px 32px 24px;
+}
+
+.keep-practicing .img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.keep-practicing .text-container {
+    width: 35%;
+    vertical-align: top;
+    margin-top: 32px;
+}
+
+.keep-practicing .flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.keep-practicing .flex-item {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.keep-practicing .mini-img-container, .keep-practicing .mini-text-container {
+    display: inline-block;
+}
+
+.keep-practicing .mini-img-container {
+    width: 35%;
+
+}
+
+.keep-practicing .mini-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.keep-practicing .mini-text-container {
+    width: 60%;
+    vertical-align: top;
+    
+}
+
+/* start learning section */

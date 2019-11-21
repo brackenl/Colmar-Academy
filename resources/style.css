@@ -14,6 +14,7 @@ h2 {
     margin: 10px 0;
 }
 
+
 /* Header */
 
 header {
@@ -22,6 +23,10 @@ header {
     top: 0;
     background-color: white;;
   }
+
+.mobile {
+    display: none;
+}
 
 nav {
     margin: 0 24px;
@@ -78,6 +83,36 @@ display: inline-block;
     color: gray;
 }
 
+@media only screen and (max-width:480px) {
+
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: contents;
+    }
+
+
+    header {
+        height: 64px;
+    }
+
+    .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+      }
+
+      .mobile a {
+        padding-top: 42px;
+        padding-bottom: 2px;
+      }
+
+}
+
 /* banner section */
 
 .banner {
@@ -109,7 +144,6 @@ display: inline-block;
 .banner .flex-container {
     display: block;
     width: 80%;
-    
 }
 
 
@@ -120,8 +154,6 @@ display: inline-block;
 .banner p {
     font-size: 24px;
 }
-
-
 
 .banner button {
     background-color: #404040;
@@ -136,6 +168,44 @@ display: inline-block;
 
 #first-section {
     margin-top: 64px;
+}
+
+@media only screen and (min-width:481px) and (max-width: 1233px) {
+    .banner .img-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+    .banner .container {
+        display: block;
+    }
+
+    .banner .img-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner .text-container {
+        width: 100%;
+        margin: 0;
+        padding: 32px 0;
+    }
+
+    .banner .flex-container {
+        margin: 0 auto;
+    }
+
+    .banner .text-container h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+
+    .banner .text-container p {
+        margin-bottom: 24px;
+    }
 }
 
 /* keep practicing section */
@@ -168,8 +238,6 @@ display: inline-block;
 .keep-practicing .flex-container {
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 .keep-practicing .flex-item {
@@ -186,7 +254,6 @@ display: inline-block;
 
 .keep-practicing .mini-img-container {
     width: 35%;
-
 }
 
 .keep-practicing .mini-img-container img {
@@ -233,6 +300,52 @@ display: inline-block;
     margin-bottom: 32px;
 }
 
+#mid-section {
+    background-color: #E8E8E8;
+}
+
+@media only screen and (min-width:481px) and (max-width: 1233px) {
+    .keep-practicing .img-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .keep-practicing .img-container {
+        display: none;
+    }
+
+    .keep-practicing .desktop {
+        display: none;
+    }
+
+    .keep-practicing .mobile {
+        display: block;
+    }
+
+    .keep-practicing .flex-item {
+        margin-left: 0;
+    }
+
+    .keep-practicing .text-container {
+        width: 100%;
+    }
+
+    .keep-practicing .mini-img-container, .keep-practicing .mini-text-container {
+        display: block;
+    }
+
+    .keep-practicing .mini-text-container {
+        width: 100%;
+    }
+
+    .keep-practicing .mini-img-container {
+        width: 100%;
+    }
+
+}
+
 /* start learning section */
 
 .start-learning {
@@ -252,6 +365,7 @@ display: inline-block;
     flex-direction: row;
     flex-wrap: wrap;
     flex: 300px;
+    justify-content: center;
     margin: 32px 72px;
 }
 
@@ -291,10 +405,61 @@ display: inline-block;
     line-height: 1.4rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+    .start-learning {
+        background-color: white;
+    }
+    
+    .start-learning .desktop {
+        display: none;
+    }
+
+    #start-learning-heading {
+        padding-top: 0;
+        font-size: 32px;
+    }
+
+    .start-learning .flex-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-item p {
+        display: none;
+    }
+
+   .start-learning .mini-text-container {
+        min-height: 20px;
+        background-color: #E8E8E8;
+        margin: 0;
+        padding: 16px 16px 24px 16px;
+        margin-bottom: 8px;
+    }
+
+    .start-learning .mini-text-container h2 {
+        font-size: 24px;
+    }
+
+    .start-learning {
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+}
+
+
 /* thesis section */
 
 .thesis {
     background-color: white;
+}
+
+#thesis-heading {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
 }
 
 .thesis .container {
@@ -373,6 +538,40 @@ display: inline-block;
     background-color: #E8E8E8;
 }
 
+@media only screen and (min-width:481px) and (max-width: 1233px) {
+    .thesis .vid-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .thesis .vid-container h2, .thesis .vid-container p {
+        display: none;
+    }
+
+    #thesis-heading {
+        font-size: 32px;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        padding-top: 0;
+    }
+
+    .thesis .vid-container {
+        width: 100%;
+    }
+
+    .thesis .text-container {
+        display: none;
+    }
+
+    .thesis .vid-container {
+        margin: 32px 0;
+    }
+
+}
+
 
 /* footer section */
 
@@ -401,4 +600,13 @@ footer li {
 footer a {
     text-decoration: none;
     color: gray;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    footer ul {
+        display: none;
+    }
+
 }
